@@ -3,18 +3,18 @@ game.things = (function(){
     bat: {
       name: 'bat',
       effects: {
-        'player_inventory': { message: "<p>You picked up the bat!</p>",
+        'player_inventory': { message: "<p>You picked up the sword!</p>",
                             object: "addItem",
                             subject: "deleteItem"
         },
-        'dino': { message: "<p>You hit the dino with the bat.</p><p>Now he's angry.</p>",
+        'dino': { message: "<p>You killed the parrot with the sword.</p><p>Now he's dead.</p>",
                   subject: 'deleteItem',
                   object: 'deleteItem',
                   callback: function(){game.screen.callDino()}
 
         },
         'empty': {
-              message: "<p>You set the bat down over there.</p>",
+              message: "<p>You set the sword down over there.</p>",
               object: "addItem",
               subject: "deleteItem"
         }
@@ -23,7 +23,7 @@ game.things = (function(){
     dino: {
       name: 'dino',
       effects: {
-        'player_inventory': { message: "<p>You can't move the dino...</p>" } 
+        'player_inventory': { message: "<p>You can't move the parrot...</p>" } 
       }
     }
   };
