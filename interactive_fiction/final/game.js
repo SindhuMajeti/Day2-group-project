@@ -7,7 +7,7 @@ game.things = (function(){
                             object: "addItem",
                             subject: "deleteItem"
         },
-        'dino': { message: "<p>You killed the parrot with the sword. Now the parrot's owner, a pirate, comes for revenge!</p><p>Now he's dead.</p>",
+        'dino': { message: "<p>You killed the parrot with the sword. Now the parrot's owner, a pirate, comes for revenge!</p><p>Now you're dead.</p>",
                   subject: 'deleteItem',
                   object: 'deleteItem',
                   callback: function(){game.screen.callDino()}
